@@ -1,0 +1,9 @@
+# http://manpages.ubuntu.com/manpages/xenial/en/man1/bash.1.html
+
+set editing-mode vi
+set keymap vi-command
+set keymap vi-insert
+
+"ji":vi-insertion-mode
+"ji":vi-movement-mode
+
