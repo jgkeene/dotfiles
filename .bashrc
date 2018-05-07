@@ -119,8 +119,9 @@ fi
 
 
 
+
 # My stuff starts here
 
-PATH="~/bin:~/.local/bin:$PATH"
-
+# set PATH so it includes user's private bin directories
+PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
