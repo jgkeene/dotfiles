@@ -3,8 +3,10 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 
 alias c="clear"
-alias a="ls -laF"
-alias t="ls -laFt | head"
+# standard sorting
+alias a="ls -lAhvX --group-directories-first"
+# sorted by modification time, descending
+alias t="ls -lAht"
 
 alias xcopy='xclip -selection clipboard'
 alias xpaste='xclip -selection clipboard -o'
