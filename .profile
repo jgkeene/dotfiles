@@ -9,6 +9,6 @@
 #umask 022
 
 
-[ -f ~/.bashrc ] && . ~/.bashrc
+[ -e ~/.bashrc ] && . ~/.bashrc
 
 

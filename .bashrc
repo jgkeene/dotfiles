@@ -106,5 +106,6 @@ fi
 # My stuff starts here
 
 # Include my local apps 
-PATH="$HOME/.local/bin:$PATH"
+PATH="~/.local/bin:~/.local/bin/pycharm-2018.1.4/bin:$PATH"
+
 
