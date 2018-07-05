@@ -21,3 +21,4 @@ alias xpaste='xclip -selection clipboard -o'
 
 alias h='function hdi(){ howdoi $* -c -n 5; }; hdi'
 #alias synaptic-pkexec='gksudo synaptic-pkexec'
+#alias r='rsync -avi --delete --info=progress3 --partial-dir=/home/azhee/Documents/.rsync-partial'

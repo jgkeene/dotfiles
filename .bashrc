@@ -108,4 +108,12 @@ fi
 # Include my local apps 
 PATH="~/.local/bin:~/.local/bin/pycharm-2018.1.4/bin:$PATH"
 
+rsync -avi --delete --info=progress3 --partial-dir=/home/azhee/Documents/.rsync-partial /home/azhee/Documents/git/notes /media/azhee/backup/debian-backups/rsync/git/notes
+rsync -avi --delete --info=progress3 --partial-dir=/home/azhee/Documents/.rsync-partial /home/azhee/Documents/git/dotfiles /media/azhee/backup/debian-backups/rsync/git/dotfiles
+rsync -avi --delete --info=progress3 --partial-dir=/home/azhee/Documents/.rsync-partial /home/azhee/Documents/thinking-rock /media/azhee/backup/debian-backups/rsync/thinking-rock
+
+rsync -avi --delete --info=progress3 --partial-dir=/home/azhee/Documents/.rsync-partial /home/azhee/Videos /media/azhee/backup/debian-backups/rsync/Videos
+rsync -avi --delete --info=progress3 --partial-dir=/home/azhee/Documents/.rsync-partial /home/azhee/Music /media/azhee/backup/debian-backups/rsync/Music
+rsync -avi --delete --info=progress3 --partial-dir=/home/azhee/Documents/.rsync-partial /home/azhee/Pictures /media/azhee/backup/debian-backups/rsync/Pictures
+
 
