@@ -4,13 +4,10 @@ alias egrep='egrep --color=auto'
 
 
 alias c="clear"
-
 # sorted alphabetically, desc
 alias a="ls -lAhvX --group-directories-first --reverse"
-
 # sorted by modification time, desc
 alias t="ls -lAhvt"
-
 # sorted by size, desc
 alias s="ls -lAhvS"
 

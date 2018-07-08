@@ -1,34 +1,27 @@
-":set number
-:set paste 
-
 if has('gui_running')
-    set lines=999 columns=999
+  set lines=999 columns=999
 endif
 
-" pathogen
-:call pathogen#infect()
-:call pathogen#helptags()
+" Set number relativenumber
+set paste 
 
+" Insert spaces instead of tabs
+set expandtab
+" Set tab to indent 2 spaces
+set tabstop=2
+" Set shifing with >,< to indent 2
+set shiftwidth=2
 
 syntax on
-color darkblue  
+"filetype plugin indent on
 
-" syntax on
-" filetype plugin indent on
-" syntax on
 " 
-" 
-" let g:gruvbox_italic=1
-" 
-" 
-" 
-" 
-" " removes superfluous white space from end of line
+" " Removes superfluous white space from end of line
 " function! FixWhiteSpace()
 "     :%s/\s*$//g
 " endfunction
 " 
-" " highlights superfluous white space from end of line
+" " Highlights superfluous white space from end of line
 " function! HightlightWhiteSpace()
 "     match ErrorMsg '\s\+$'
 "     highlight ErrorMsg guibg=White guifg=White
