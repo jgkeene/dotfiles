@@ -2,7 +2,7 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-# If not running interactively, don't do anything
+# if not running interactively, don't do anything
 case $- in
     *i*) ;;
       *) return;;
@@ -43,7 +43,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -107,18 +107,4 @@ fi
 
 # Include my local apps 
 PATH="~/.local/bin:~/.local/bin/pycharm-2018.1.4/bin:$PATH"
-
-# Dotfiles and note files
-#rsync -avi --delete --info=progress3 --partial-dir=/home/azhee/Documents/.rsync-partial /home/azhee/Documents/git/notes /media/azhee/backup/debian-backups/rsync/git/notes
-#rsync -avi --delete --info=progress3 --partial-dir=/home/azhee/Documents/.rsync-partial /home/azhee/Documents/git/dotfiles /media/azhee/backup/debian-backups/rsync/git/dotfiles
-#rsync -avi --delete --info=progress3 --partial-dir=/home/azhee/Documents/.rsync-partial /home/azhee/Documents/thinking-rock /media/azhee/backup/debian-backups/rsync/thinking-rock
-
-# Personal files
-#rsync -avi --delete --info=progress3 --partial-dir=/home/azhee/Documents/.rsync-partial /home/azhee/Videos /media/azhee/backup/debian-backups/rsync/Videos
-#rsync -avi --delete --info=progress3 --partial-dir=/home/azhee/Documents/.rsync-partial /home/azhee/Music /media/azhee/backup/debian-backups/rsync/Music
-#rsync -avi --delete --info=progress3 --partial-dir=/home/azhee/Documents/.rsync-partial /home/azhee/Pictures /media/azhee/backup/debian-backups/rsync/Pictures
-
-
-# Debian says to do it this way
-#rsync -aHAXSv --delete --info=progress3 --partial-dir=/home/azhee/.rsync-partial /home/azhee/Pictures /media/azhee/backup/debian-backups/rsync/Pictures
 
