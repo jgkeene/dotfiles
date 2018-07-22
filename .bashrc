@@ -105,17 +105,12 @@ fi
 
 # My stuff starts here
 
-# Include my local apps 
-PATH="$HOME/.local/bin:$HOME/.local/bin/pycharm-2018.1.4/bin:$PATH"
-
-
-# Golang
-export GOROOT="/home/azhee/.local/bin/go1.10.3.linux-amd64/go"
-export PATH="$PATH:$GOROOT/bin"
-
 # Python
 export PYTHONDONTWRITEBYTECODE=1
 
+## Golang
+#export GOROOT="/home/azhee/.local/bin/go1.10.3.linux-amd64/go"
+#export PATH="$PATH:$GOROOT/bin"
 
 ## Keep cursor at top, output below -https://unix.stackexchange.com/questions/218323/keep-bash-input-on-top-line-of-screen
 #prompt_on_top() {
