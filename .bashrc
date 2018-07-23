@@ -105,6 +105,12 @@ fi
 
 # My stuff starts here
 
+# Bash
+export EDITOR="/usr/bin/vim"
+
+# Local python packages (and pip tools installed with get-pip.py)
+export PATH="$PATH:/home/azhee/.local/bin"
+
 # Python
 export PYTHONDONTWRITEBYTECODE=1
 
