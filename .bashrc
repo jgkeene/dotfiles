@@ -75,10 +75,6 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
 fi
 
 # Alias definitions.
@@ -117,6 +113,13 @@ export PYTHONDONTWRITEBYTECODE=1
 ## Golang
 #export GOROOT="/home/azhee/.local/bin/go1.10.3.linux-amd64/go"
 #export PATH="$PATH:$GOROOT/bin"
+
+# Use browser to lookup debian manpages online
+function manw() {
+  google-chrome-stable https://manpages.debian.org/stretch/$1
+}
+
+
 
 ## Keep cursor at top, output below -https://unix.stackexchange.com/questions/218323/keep-bash-input-on-top-line-of-screen
 #prompt_on_top() {

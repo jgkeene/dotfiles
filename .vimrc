@@ -5,6 +5,12 @@ endif
 " Set number relativenumber
 set paste 
 
+" Enable mouse
+set mouse=a
+
+" Enable X11 clipboard
+set clipboard=unnamedplus 
+
 " Insert spaces instead of tabs
 set expandtab
 " Set tab to indent 2 spaces
