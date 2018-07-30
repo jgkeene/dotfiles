@@ -18,3 +18,7 @@ function grepcount() {
   grep --recursive --ignore-case --extended-regexp --color=always --binary-files=without-match --count $s * | grep --invert-match 0 | sort --field-separator=: --key=2 --sort=version
 }
 
+# Browse Debian manpage website
+function manw () { 
+    google-chrome-stable https://manpages.debian.org/stretch/$1
+}

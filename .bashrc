@@ -85,6 +85,10 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+if [ -f ~/.bash_functions ]; then
+    . ~/.bash_functions
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -101,11 +105,15 @@ fi
 
 # My stuff starts here
 
-# Bash
+
 export EDITOR="/usr/bin/vim"
 
+# Access extra apps
+export PATH="$PATH:""/usr/sbin:""/sbin"
+
+
 # Local python packages (and pip tools installed with get-pip.py)
-export PATH="$PATH:/home/azhee/.local/bin"
+#export PATH="$PATH:/home/azhee/.local/bin"
 
 # Python
 export PYTHONDONTWRITEBYTECODE=1

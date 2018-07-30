@@ -1,3 +1,6 @@
+alias diffpretty='diff -u --color=always'
+
+
 alias c='clear'
 
 # Sorted by file extension
